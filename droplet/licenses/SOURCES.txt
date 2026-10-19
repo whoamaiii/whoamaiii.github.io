@@ -1,0 +1,6 @@
+Corresponding source for the bundled programs:
+
+yt-dlp 2026.08.19: https://github.com/yt-dlp/yt-dlp/tree/2026.08.19
+ffmpeg 9.0.2: https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz
+deno 2.9.7: https://github.com/denoland/deno/tree/v2.9.7
+ffmpeg build configuration: https://git.martin-riedl.de/ffmpeg/build-script

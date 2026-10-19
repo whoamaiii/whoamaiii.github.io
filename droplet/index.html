@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Droplet: save videos from your Mac’s menu bar</title>
+<meta name="description" content="Droplet is a tiny menu-bar app for macOS that saves the video from a copied link as an MP4. Your first three saved videos are free.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3f6fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#060c15" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Droplet: save videos from your Mac’s menu bar">
+<meta property="og:description" content="Droplet is a tiny menu-bar app for macOS that saves the video from a copied link as an MP4. Your first three saved videos are free.">
+<link rel="canonical" href="https://whoamaiii.github.io/droplet/">
+<meta property="og:url" content="https://whoamaiii.github.io/droplet/">
+<meta property="og:image" content="https://whoamaiii.github.io/droplet/icon.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icon.png" type="image/png" sizes="1024x1024">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body class="page-home">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="./"><svg class="brand-drop" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><use href="#i-drop" fill="url(#g-drop)"/></svg>Droplet</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="./#how">How it works</a>
+      <a href="./#price">Pricing</a>
+      <a href="./#install">Install</a>
+      <a href="./#faq">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-small try-btn" href="./#install">Try it free</a>
+    <button class="btn btn-primary btn-small send-btn" type="button" data-send="./">Send to my Mac</button>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero wrap" aria-labelledby="hero-title">
+  <div class="backdrop" aria-hidden="true" data-backdrop><div class="aurora"><i></i><i></i><i></i></div></div>
+  <div class="hero-copy">
+    
+    <p class="offer-pill"><span class="offer-pill-tag">Launch offer</span><span>A full license for <strong>any price from US$0 to US$4.99</strong></span></p>
+    
+    <h1 id="hero-title" class="hero-title"><span>Copy a link.</span> <span>Click the drop.</span> <span class="accent">It’s saved.</span></h1>
+    <p class="hero-lead">A tiny Mac menu-bar app that saves the video from a copied link as an MP4. Your first three saved videos are free.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary try-btn" href="#install">Try it free</a>
+      <button class="btn btn-primary send-btn" type="button" data-send="./"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-share"/></svg>Send to my Mac</button>
+      <a class="btn btn-quiet" href="#price">Choose your price</a>
+      
+      
+    </div>
+    <ul class="spec-strip" aria-label="At a glance">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-film"/></svg>MP4 (H.264 + AAC)</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-user-off"/></svg>No account</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-circle-check"/></svg>3 videos free</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-laptop"/></svg>macOS 14 or later</li>
+    </ul>
+  </div>
+
+  <figure class="stage" data-demo data-icon="idle">
+    <svg class="intro-drop" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><use href="#i-drop" fill="url(#g-drop)"/><ellipse cx="30" cy="82" rx="9" ry="15" fill="#fff" opacity=".5" filter="url(#f-soft)"/></svg>
+    <div class="screen" data-demo-screen>
+      <div class="intro" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="desk" aria-hidden="true"><span class="desk-item"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-folder"/></svg>Downloads</span><span class="desk-item"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-folder"/></svg>Projects</span></div>
+      <div class="menubar">
+        <div class="mb-menus" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="mb-status" aria-hidden="true"><i></i><i></i></div>
+        <button class="mb-drop is-first" type="button" aria-expanded="true" aria-controls="demo-popover" data-demo-toggle>
+          <svg class="mb-icon-idle" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><use href="#i-drop" fill="currentColor"/></svg>
+          <svg class="mb-icon-busy" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-drop-circle" fill="currentColor"/></svg>
+          <svg class="mb-icon-done" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-check-circle"/></svg>
+          <span class="visually-hidden">Droplet in the menu bar (demo)</span>
+        </button>
+      </div>
+
+      <div class="popover is-opening is-first" id="demo-popover" role="group" aria-label="Droplet window (demo)" data-demo-popover>
+        <div class="pop-head" aria-hidden="true">
+          <span class="pop-ring"></span><span class="pop-ring"></span>
+          <svg class="pop-drop" viewBox="0 0 100 125" focusable="false"><use href="#i-drop" fill="url(#g-drop)"/><ellipse cx="27" cy="84" rx="10" ry="17" fill="#fff" opacity=".5" filter="url(#f-soft)"/></svg>
+        </div>
+        <p class="pop-title">Droplet</p>
+        <p class="pop-sub">Clipboard → MP4 in Downloads</p>
+        <div class="pop-body">
+          <div class="pop-view" data-view="idle">
+            <span class="pop-paste" aria-hidden="true"><kbd>⌘</kbd><kbd>C</kbd></span>
+            <div class="pop-link"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><div><b>www.youtube.com</b><small>/watch</small></div></div>
+            <button class="pop-trial" type="button" data-demo-trial>3 of 3 free downloads left</button>
+            <button class="pop-download" type="button" data-demo-start><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-download"/></svg><span data-demo-start-label>Download</span></button>
+            <span class="pop-quit" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-power"/></svg>Quit Droplet — stop everything</span>
+          </div>
+          <div class="pop-view" data-view="downloading" hidden>
+            <p class="pop-video" data-demo-title>Fetching video…</p>
+            <div class="pop-progress is-indeterminate" role="progressbar" aria-label="Download progress (demo)" aria-valuemin="0" aria-valuemax="100" data-demo-progress><span class="pop-progress-fill"></span></div>
+            <div class="pop-status"><span class="pop-stage" data-demo-stage>Fetching video…</span><button class="pop-btn" type="button" data-demo-cancel>Cancel</button></div>
+          </div>
+          <div class="pop-view pop-done" data-view="done" hidden>
+            <span class="pop-check"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>
+            <p class="pop-saved">Video saved</p>
+            <p class="pop-folder">Downloads</p>
+            <p class="pop-small">Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film</p>
+            <div class="pop-links">
+              <button class="pop-linkbtn" type="button" data-demo-explain="finder">Show in Finder</button>
+              <button class="pop-linkbtn" type="button" data-demo-new>New download</button>
+              <button class="pop-linkbtn" type="button" data-demo-explain="open">Open video</button>
+            </div>
+            <button class="pop-btn" type="button" data-demo-done>Done</button>
+          </div>
+        </div>
+        <div class="pop-foot" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false"><use href="#i-down-circle"/></svg>
+          <span>Video links → MP4</span>
+          <svg viewBox="0 0 24 24" focusable="false"><use href="#i-gear"/></svg>
+          <svg viewBox="0 0 24 24" focusable="false"><use href="#i-sync"/></svg>
+          <svg viewBox="0 0 24 24" focusable="false"><use href="#i-power"/></svg>
+        </div>
+      </div>
+    </div>
+    <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause animations" title="Pause animations" data-motion-toggle hidden><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-pause"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-play"/></svg></button>
+    <figcaption class="stage-note" data-demo-note></figcaption>
+    <p class="visually-hidden" aria-live="polite" data-demo-live></p>
+  </figure>
+</section>
+
+<section id="how" class="section section-tint" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-title">From link to MP4 in three steps</h2>
+      <p class="section-lead">Droplet works from the menu bar at the top of your screen, so there is no app window to find first.</p>
+    </div>
+    <div class="flow-wrap" data-flow>
+    <ol class="flow">
+      <li class="flow-step reveal">
+        <div class="flow-visual" aria-hidden="true">
+          <div class="flow-visual-copy">
+            <div class="keys"><kbd>⌘</kbd><kbd>C</kbd></div>
+            <div class="chip-link"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-link"/></svg><span><b>www.youtube.com</b>/watch</span></div>
+          </div>
+        </div>
+        <h3>Copy a link</h3>
+        <p>Copy the address of a video you have the right to save, from your browser or any app.</p>
+      </li>
+      <li class="flow-step reveal">
+        <div class="flow-visual flow-visual-click" aria-hidden="true">
+          <div class="mini-bar"><i></i><i></i><span class="mini-drop"><svg viewBox="0 0 100 125" focusable="false"><use href="#i-drop" fill="currentColor"/></svg></span></div>
+          <span class="mini-pill"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-download"/></svg>Download</span>
+        </div>
+        <h3>Click the drop</h3>
+        <p>Click the drop in your menu bar. Droplet shows the link it found; press Download.</p>
+      </li>
+      <li class="flow-step reveal">
+        <div class="flow-visual" aria-hidden="true">
+          <div class="saved-chip"><span class="pop-check"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-check"/></svg></span><b>Video saved</b><small>Downloads</small></div>
+        </div>
+        <h3>Find the MP4</h3>
+        <p>The video lands in your Downloads folder. Close the window any time: the download keeps going.</p>
+      </li>
+    </ol>
+    <div class="flow-stage" aria-hidden="true">
+      <div class="fs-screen">
+        <div class="fs-bar"><i></i><i></i><i></i><span class="fs-drop"><svg class="fs-i-idle" viewBox="0 0 100 125" focusable="false"><use href="#i-drop" fill="currentColor"/></svg><svg class="fs-i-busy" viewBox="0 0 24 24" focusable="false"><use href="#i-drop-circle" fill="currentColor"/></svg><svg class="fs-i-done" viewBox="0 0 24 24" focusable="false"><use href="#i-check-circle"/></svg></span></div>
+        <div class="fs-browser">
+          <div class="fs-tabbar"><i></i><i></i><i></i></div>
+          <div class="fs-address"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-link"/></svg><span class="fs-url">www.youtube.com/watch</span></div>
+          <div class="fs-video"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-film"/></svg></div>
+          <div class="fs-lines"><i></i><i></i></div>
+        </div>
+        <div class="fs-keys"><kbd>⌘</kbd><kbd>C</kbd></div>
+        <div class="fs-chip"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-link"/></svg>www.youtube.com/watch</div>
+        <div class="fs-pop">
+          <svg class="fs-pop-drop" viewBox="0 0 100 125" focusable="false"><use href="#i-drop" fill="url(#g-drop)"/></svg>
+          <b class="fs-pop-title">Droplet</b>
+          <div class="fs-pop-link"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-link"/></svg>www.youtube.com/watch</div>
+          <div class="fs-pop-action"><span class="fs-pop-btn"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-download"/></svg>Download</span><span class="fs-pop-progress"><i></i></span></div>
+          <div class="fs-pop-done"><span class="pop-check"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-check"/></svg></span><b>Video saved</b><small>Downloads</small></div>
+        </div>
+        <span class="fs-click"></span>
+        <svg class="fs-cursor" viewBox="0 0 24 24" focusable="false"><use href="#i-cursor"/></svg>
+        <div class="fs-file"><svg viewBox="0 0 24 24" focusable="false"><use href="#i-folder"/></svg><span><b>Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film.mp4</b><small>Downloads</small></span></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Features</p>
+      <h2 id="features-title">Made to stay out of your way</h2>
+    </div>
+    <div class="bento">
+      <article class="tile tile-menubar reveal">
+        <div class="tile-text">
+          <h3>Lives in your menu bar</h3>
+          <p>No Dock icon and no window to manage. The drop changes while a video downloads, so you can close Droplet’s window and keep working.</p>
+        </div>
+        <div class="menubar-scene" data-states>
+          <div class="scene-bar" aria-hidden="true"><i></i><i></i><span class="scene-drop"><svg class="s-idle" viewBox="0 0 100 125" focusable="false"><use href="#i-drop" fill="currentColor"/></svg><svg class="s-busy" viewBox="0 0 24 24" focusable="false"><use href="#i-drop-circle" fill="currentColor"/></svg><svg class="s-done" viewBox="0 0 24 24" focusable="false"><use href="#i-check-circle"/></svg></span></div>
+          <div class="scene-zoom" aria-hidden="true"><svg class="s-idle" viewBox="0 0 100 125" focusable="false"><use href="#i-drop" fill="currentColor"/></svg><svg class="s-busy" viewBox="0 0 24 24" focusable="false"><use href="#i-drop-circle" fill="currentColor"/></svg><svg class="s-done" viewBox="0 0 24 24" focusable="false"><use href="#i-check-circle"/></svg></div>
+          <ul class="states" aria-label="What the menu-bar icon shows">
+            <li class="state" data-state="idle"><span class="state-icon"><svg class="i-drop-small" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><use href="#i-drop" fill="currentColor"/></svg></span>Ready</li>
+            <li class="state state-busy" data-state="busy"><span class="state-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-drop-circle" fill="currentColor"/></svg></span>Downloading</li>
+            <li class="state state-done" data-state="done"><span class="state-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-check-circle"/></svg></span>Saved</li>
+          </ul>
+        </div>
+      </article>
+      <article class="tile tile-mp4 reveal">
+        <p class="big-type" aria-hidden="true">MP4</p>
+        <h3>Plays everywhere</h3>
+        <p>H.264 video with AAC sound. It opens in QuickTime, Photos and iMovie and plays on iPhone. Droplet checks every saved file before it counts.</p>
+      </article>
+      <article class="tile tile-private reveal">
+        <ul class="no-list"><li>No account.</li><li>No analytics.</li><li>No ads.</li></ul>
+        <p>Your video links and browser cookies go only to the video site, never to us.</p>
+      </article>
+      <article class="tile tile-update reveal">
+        <div class="footer-chip" aria-hidden="true"><svg class="spin" viewBox="0 0 24 24" focusable="false"><use href="#i-sync"/></svg>Updating yt-dlp…</div>
+        <h3>Keeps up with video sites</h3>
+        <p>Sites change often. One click updates Droplet’s download engine, yt-dlp, and the new version is only used after it has been checked.</p>
+      </article>
+      <article class="tile tile-login reveal">
+        <div class="login-chip" aria-hidden="true"><span class="pop-btn">Use login once</span><span class="browsers">Safari, Chrome, Firefox, Brave, Edge</span></div>
+        <h3>Sign-in only when you say so</h3>
+        <p>If a video needs you to be signed in, Droplet can use your browser’s login for that one download, after you approve it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="price" class="section pricing" aria-labelledby="price-title">
+  <div class="wrap">
+    
+    <div class="section-head reveal">
+      <p class="eyebrow">Pricing</p>
+      <h2 id="price-title">Launch offer: name your price</h2>
+      <p class="section-lead">Every price from US$0 to US$4.99 gets the same full license with unlimited downloads.</p>
+    </div>
+    
+    
+    <div class="price-grid">
+      
+      <form class="offer reveal" data-price-form data-max-cents="499" novalidate>
+        <div class="offer-head">
+          <h3>Launch license</h3>
+          <p>Choose what you pay.</p>
+        </div>
+        <div class="offer-body">
+          <div class="offer-field">
+            <label for="price-input">Your price in US dollars</label>
+            <div class="price-input-wrap" data-price-wrap>
+              <span class="price-currency" aria-hidden="true">US$</span>
+              <input class="price-input" id="price-input" name="price" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="4.99" aria-describedby="price-help price-message" data-price-input>
+            </div>
+            <p class="field-help" id="price-help">Any amount from US$0 to US$4.99. Cents are fine.</p>
+            <input class="price-range" type="range" min="0" max="499" step="1" value="499" aria-label="Price slider" aria-valuetext="US$4.99" aria-controls="price-input" data-price-range>
+            <div class="price-picks" role="group" aria-label="Quick picks">
+              <button class="pick" type="button" data-price-pick="0" aria-pressed="false">US$0</button>
+              <button class="pick" type="button" data-price-pick="100" aria-pressed="false">US$1</button>
+              <button class="pick" type="button" data-price-pick="300" aria-pressed="false">US$3</button>
+              <button class="pick" type="button" data-price-pick="499" aria-pressed="true">US$4.99</button>
+            </div>
+            <p class="field-message" id="price-message" aria-live="polite" data-price-message>That’s the regular price.</p>
+          </div>
+          <div class="offer-drop" aria-hidden="true">
+            <svg class="drop-meter" viewBox="0 0 100 125" focusable="false" data-price-meter>
+              <defs>
+                <clipPath id="meter-clip"><path d="M50 0Q6 32.5 0 75C0 102.6 22.4 125 50 125S100 102.6 100 75Q94 32.5 50 0Z"/></clipPath>
+                <linearGradient id="meter-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#28d6f0"/><stop offset=".45" stop-color="#1c6eee"/><stop offset="1" stop-color="#5848d6"/></linearGradient>
+              </defs>
+              <path class="drop-glass" d="M50 0Q6 32.5 0 75C0 102.6 22.4 125 50 125S100 102.6 100 75Q94 32.5 50 0Z"/>
+              <g clip-path="url(#meter-clip)">
+                <g class="drop-water" data-price-water>
+                  <path class="drop-wave drop-wave-back" d="M-150 2Q-137.5 -3-125 2T-100 2-75 2-50 2-25 2 0 2 25 2 50 2 75 2 100 2 125 2 150 2 175 2 200 2 225 2 250 2V150H-150Z" fill="#1c4fc4" opacity=".55"/>
+                  <path class="drop-wave" d="M-150 5Q-137.5 0-125 5T-100 5-75 5-50 5-25 5 0 5 25 5 50 5 75 5 100 5 125 5 150 5 175 5 200 5 225 5 250 5V150H-150Z" fill="url(#meter-water)"/>
+                  <circle class="bubble" cx="34" cy="118" r="2.4"/><circle class="bubble" cx="58" cy="122" r="1.6"/><circle class="bubble" cx="70" cy="116" r="2"/>
+                </g>
+              </g>
+              <ellipse class="drop-shine" cx="27" cy="84" rx="9" ry="15" filter="url(#f-soft)"/>
+            </svg>
+            <p class="drop-caption">How much you support Droplet’s developer</p>
+          </div>
+        </div>
+        <div class="offer-action">
+          
+          
+          <button class="btn btn-primary" type="button" aria-disabled="true" aria-describedby="checkout-status" data-price-submit data-checkout-unavailable><span>Continue with <span data-price-label>US$4.99</span></span></button>
+          <p class="unavailable-note" id="checkout-status" role="status" data-checkout-status>Checkout isn’t open yet. Choosing a price here doesn’t take a payment or create a license.</p>
+          
+          <ol class="offer-steps">
+            <li>Your license key arrives by email after checkout.</li>
+            <li>In Droplet, click the gear icon and paste the key under License.</li>
+            <li>Download without a limit, on your Macs up to the number stated at checkout.</li>
+          </ol>
+        </div>
+      </form>
+      
+      
+      <aside class="trial reveal" aria-labelledby="trial-title">
+        <h3 id="trial-title">Free trial</h3>
+        <p class="trial-count"><b>3</b><span>saved videos, free</span></p>
+        <ul class="ticks">
+          <li>No account and no payment details</li>
+          <li>Failed or cancelled downloads don’t count</li>
+          <li>Ends after the third saved video</li>
+        </ul>
+        <a class="btn btn-quiet" href="#install">Try it free</a>
+        
+        <p class="trial-note">The trial is not the same as a US$0 launch license. The trial needs no checkout but stops after three videos. A launch license, at any price, has no download limit.</p>
+        
+      </aside>
+    </div>
+    
+    <p class="price-foot">After the launch offer, a license costs US$4.99, paid once. When checkout opens, payment, receipt and license key will be handled by Lemon Squeezy.</p>
+    
+  </div>
+</section>
+
+
+<section id="install" class="section band" aria-labelledby="install-title">
+  <div class="wrap install">
+    <div class="section-head install-head reveal">
+      <img class="app-icon" src="icon.png" width="104" height="104" alt="Droplet’s app icon" loading="lazy" decoding="async">
+      <p class="eyebrow">Install</p>
+      <h2 id="install-title">Install in one line</h2>
+      <p class="section-lead">Droplet installs from Terminal, the way many Mac tools do. The same line updates it later.</p>
+    </div>
+    <div class="install-line reveal">
+      
+      <div class="command command-large"><code id="install-command">curl -fsSL https://whoamaiii.github.io/droplet/install.sh | bash</code><button class="copy-btn" type="button" data-copy="install-command" aria-describedby="copy-status"><svg class="copy-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><svg class="copy-done" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span data-copy-label>Copy</span></button></div>
+      <p class="copy-status" id="copy-status" aria-live="polite" data-copy-status="install-command"></p>
+      
+      
+    </div>
+    <ol class="steps reveal">
+      <li><h3>Open Terminal</h3><p>Press <kbd>⌘ Command</kbd> + <kbd>Space</kbd>, type <em>Terminal</em> and press <kbd>Return</kbd>.</p></li>
+      <li><h3>Paste the line and press Return</h3><p>Droplet is downloaded, checked against its published fingerprint and copied to Applications.</p></li>
+      <li><h3>Look for the drop</h3><p>Droplet opens and a drop appears in your menu bar, at the top right of the screen.</p></li>
+    </ol>
+    <div class="install-foot reveal">
+      <dl class="requirements">
+        <dt>Needs</dt><dd>macOS 14 Sonoma or later</dd>
+        <dt>Runs on</dt><dd>Apple Silicon or Intel</dd>
+        <dt>Also</dt><dd>An internet connection</dd>
+      </dl>
+      <div class="install-more">
+        <p>To update Droplet later, run the same line again. Your license, free downloads and settings are kept.</p>
+        <p><a href="install.sh">Read the installer first.</a> It downloads Droplet 1.0.0, checks its SHA&#8209;256 fingerprint against this release, copies it to Applications and opens it. Nothing else on your Mac is changed.</p>
+        
+        <details class="disclosure">
+          <summary>Prefer a normal download?</summary>
+          <ol>
+            <li>Download <a href="https://github.com/whoamaiii/whoamaiii.github.io/releases/download/v1.0.0/Droplet-1.0.0.dmg">Droplet-1.0.0.dmg</a>, open it and drag Droplet into Applications.</li>
+            <li>Open Droplet. macOS says it can’t verify the developer: click <strong>Done</strong>.</li>
+            <li>Open <strong>System Settings → Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong> next to “Droplet was blocked”, then enter your password.</li>
+          </ol>
+          <p class="small">This is needed once, because Droplet is sold directly instead of through the App Store. The Terminal install avoids it.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="faq-aside reveal" id="support">
+      <p class="eyebrow">Help</p>
+      <h2 id="faq-title">Questions</h2>
+      <p>Straight answers about sites, the free trial, installing and privacy.</p>
+      <div class="support-card">
+        <h3>Still stuck?</h3>
+        <a href="mailto:quentin@whoamiii.art">quentin@whoamiii.art</a>
+        <p class="small">It helps to mention your macOS version and what Droplet showed.</p>
+      </div>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>Which sites work?</summary>
+        <div><p>Droplet uses the open-source yt-dlp engine, which supports many video sites, including YouTube. Some sites only work when you are signed in; Droplet can use your browser’s login for one download if you allow it. Sites change often, so support can come and go. Try the sites you care about with the free downloads first.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>What counts as one of the free downloads?</summary>
+        <div><p>Only a new video that is fully saved and passes Droplet’s check of the file. Failed or cancelled downloads don’t count. You don’t need an account.</p></div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>What do I get if I choose US$0?</summary>
+        <div><p>The same full license as at US$4.99: unlimited downloads, with a license key sent by email after checkout. You paste the key into Droplet’s settings once.</p><p>It isn’t the free trial: the trial needs no checkout and stops after three saved videos.</p></div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>What does the Terminal install do?</summary>
+        <div><p>It runs a short, readable script from this website. The script downloads Droplet, checks that the file matches the SHA&#8209;256 fingerprint published with this release, copies it to Applications and opens it. Many Mac tools install this way.</p><p>A copy of Droplet downloaded with a web browser needs a one-time approval in System Settings, because Droplet is sold directly instead of through the App Store. The Terminal install doesn’t need it.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Where are my videos saved?</summary>
+        <div><p>In your Downloads folder. You can choose another folder in Droplet’s settings (the gear icon, or <kbd>⌘ Command</kbd> + <kbd>,</kbd>). macOS may ask once for permission to save there.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I update, move or uninstall Droplet?</summary>
+        <div><p>To update, run the install line again. To uninstall, quit Droplet from its window, then drag it from Applications to the Trash.</p><p>Before you move to a new Mac, use <strong>Deactivate this Mac</strong> in Droplet’s license settings so your key works on the new one.</p></div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>Does Droplet collect my data?</summary>
+        <div><p>No. Droplet has no analytics, tracking or ads. Video links and cookies go only to the video site. Checking a license sends only the license key. The <a href="privacy/">privacy policy</a> has the details.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>What do I need?</summary>
+        <div><p>A Mac with macOS 14 Sonoma or later (Apple Silicon or Intel) and an internet connection.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap">
+    <div class="closing-panel reveal">
+      <svg class="closing-art" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
+        <ellipse cx="120" cy="128" rx="112" ry="18"/><ellipse cx="120" cy="128" rx="74" ry="12"/><ellipse cx="120" cy="128" rx="40" ry="7"/>
+        <use class="art-drop" href="#i-drop" x="96" y="20" width="48" height="60" fill="#fff"/>
+      </svg>
+      <h2 id="closing-title">Your next video is one click away</h2>
+      <p class="closing-lead">Install Droplet and save your first three videos free. No account and no payment details.</p>
+      <a class="btn btn-light" href="#install">Try it free</a>
+      <p class="closing-or">Or paste this line into Terminal:</p>
+      
+      <div class="command"><code id="closing-command">curl -fsSL https://whoamaiii.github.io/droplet/install.sh | bash</code><button class="copy-btn" type="button" data-copy="closing-command" aria-describedby="closing-copy-status"><svg class="copy-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><svg class="copy-done" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span data-copy-label>Copy</span></button></div>
+      <p class="copy-status" id="closing-copy-status" aria-live="polite" data-copy-status="closing-command"></p>
+      
+      
+    </div>
+  </div>
+</section>
+
+<section class="conduct" aria-labelledby="conduct-title">
+  <div class="wrap conduct-note">
+    <svg class="conduct-drop" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><use href="#i-drop" fill="url(#g-drop)"/></svg>
+    <div>
+      <h2 id="conduct-title">Save what’s yours to save</h2>
+      <p>Only download videos you have the right to download, and follow the terms of the sites you use. Droplet is for your own videos, Creative Commons works and other content you may save.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="./"><svg class="brand-drop" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><use href="#i-drop" fill="url(#g-drop)"/></svg>Droplet</a>
+      <p>Saves videos from your Mac’s menu bar.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Legal and support">
+      <a href="privacy/">Privacy</a>
+      <a href="terms/">Terms</a>
+      <a href="licenses/">Third-party licenses</a>
+      <a href="mailto:quentin@whoamiii.art">Support</a>
+    </nav>
+    <p class="footer-fine">&copy; 2026 Whoamiii, Norway. Droplet is not affiliated with YouTube or any other video site.</p>
+  </div>
+</footer>
+<svg class="sprite" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#28d6f0"/><stop offset=".55" stop-color="#1c6eee"/><stop offset="1" stop-color="#5848d6"/>
+    </linearGradient>
+    <filter id="f-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4"/></filter>
+  </defs>
+  <!-- The droplet: the same curves as DropletShape in the app (Views.swift). -->
+  <symbol id="i-drop" viewBox="0 0 100 125"><path d="M50 0Q6 32.5 0 75C0 102.6 22.4 125 50 125S100 102.6 100 75Q94 32.5 50 0Z"/></symbol>
+  <symbol id="i-drop-circle" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M1 12a11 11 0 1 0 22 0a11 11 0 1 0-22 0ZM12 6.38Q8.04 9.3 7.5 13.13C7.5 15.61 9.52 17.63 12 17.63S16.5 15.61 16.5 13.13Q15.96 9.3 12 6.38Z"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7.4 12.3l3.1 3.1 6.1-6.5" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.6 4.6L19 7.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></g></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v12"/><path d="M6.5 10.5 12 16l5.5-5.5"/><path d="M5 20.5h14"/></g></symbol>
+  <symbol id="i-power" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M12 3v8.5"/><path d="M7 5.8a8 8 0 1 0 10 0"/></g></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="7.2" stroke-width="3.4" stroke-dasharray="2.85 2.8"/><circle cx="12" cy="12" r="5.6" stroke-width="2"/><circle cx="12" cy="12" r="2.1" stroke-width="2"/></g></symbol>
+  <symbol id="i-sync" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 9.5A8 8 0 0 0 5.2 7.6"/><path d="M4.5 14.5a8 8 0 0 0 14.3 1.9"/><path d="M19.8 4.5v5h-5"/><path d="M4.2 19.5v-5h5"/></g></symbol>
+  <symbol id="i-film" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3.5"/><path d="M10.2 9.4v5.2l4.4-2.6z"/></g></symbol>
+  <symbol id="i-user-off" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8.5" r="3.5"/><path d="M4.5 19.5a6.5 6.5 0 0 1 10.4-5.2"/><path d="m16.5 15.5 4 4m0-4-4 4"/></g></symbol>
+  <symbol id="i-circle-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.3 12.2 2.6 2.6 4.9-5.1"/></g></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="5" width="15" height="10.5" rx="2"/><path d="M2.5 19h19"/></g></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="3"/><path d="M15.5 8.5v-2a3 3 0 0 0-3-3h-6a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h2"/></g></symbol>
+  <symbol id="i-cursor" viewBox="0 0 24 24"><path d="M5 3v16l4-3.8 2.8 6 2.6-1.2-2.7-5.8H17z" fill="#fff" stroke="#111" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h3.6l2.2 2.2h7.2A2.5 2.5 0 0 1 21 9.7v7.8a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 6.5v11M15 6.5v11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.5 6.2v11.6a.8.8 0 0 0 1.2.7l9.3-5.8a.8.8 0 0 0 0-1.4L9.7 5.5a.8.8 0 0 0-1.2.7z" fill="currentColor"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v11"/><path d="M8 7.5 12 3.5l4 4"/><path d="M8.5 10.5H7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-1.5"/></g></symbol>
+  <symbol id="i-down-circle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v9.5"/><path d="m8 12.8 4 4 4-4"/></g></symbol>
+</svg>
+</body>
+</html>
